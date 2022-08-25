@@ -1,11 +1,15 @@
 ﻿Console.Clear();
-Console.WriteLine("Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.");
-int num = new Random().Next(1,8); 
-if (num <= 5)
+Console.WriteLine("Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.");
+
+int num = new Random().Next(10,1000); 
+int a1 = num / 100;
+int a2 = num % 10;
+
+if (a1 > 0)
 {
-Console.WriteLine(+num+" день недели рабочий ");
+Console.WriteLine("Вторая цифра в числе " +num+ " -> " + a2);
 }
 else
 {
-Console.WriteLine(+num+ " день недели выходной ");
+Console.WriteLine("третьей цифры нет");
 }
